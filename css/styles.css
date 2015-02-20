@@ -20,7 +20,7 @@ h1, h3 {
 }
 
 textarea:focus, input:focus {
-    color: blue;
+  color: blue;
 }
 
 .btn:hover {

@@ -3,17 +3,15 @@ var Pizza = {
   toppingChoice: "Tofurky Pepperoni",
   numSlices: function() {
     var divideBy;
-      if (this.toppingChoice === "Tofurky Pepperoni") {
-        divideBy = .5;
-      } else {
-        divideBy = .8;
-      }
+    if (this.toppingChoice === "Tofurky Pepperoni") {
+      divideBy = .5;
+    } else {
+      divideBy = .8;
+    }
     var sliceCount = Math.round(this.inches * divideBy);
     return sliceCount;
-
-
-    }
-  };
+  }
+};
 
 
 
@@ -29,8 +27,8 @@ $(document).ready(function() {
     newPizza.toppingChoice = inputtedTopping;
 
     $(".response").hide();
-      $(".sliceNum").text(newPizza.numSlices());
-      $("#yourOrder").show();
-    }
-  );
+    $(".sliceNum").text(newPizza.numSlices());
+    $("#yourOrder").show();
+  }
+);
 });
