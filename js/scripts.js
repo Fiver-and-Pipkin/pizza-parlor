@@ -21,12 +21,12 @@ $(document).ready(function() {
   $("form#new-pizza").submit(function(event) {
     event.preventDefault();
 
-    var inputtedTopping = $('select#topping').val();
+    var inputtedTopping = $('select#toppingChoice').val();
     var inputtedInches = parseInt($('input#inches').val());
 
     var newPizza = Object.create(Pizza);
     newPizza.inches = inputtedInches;
-    newPizza.topping = inputtedTopping;
+    newPizza.toppingChoice = inputtedTopping;
 
     $(".response").hide();
       $(".sliceNum").text(newPizza.numSlices());

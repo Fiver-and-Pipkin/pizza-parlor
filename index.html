@@ -8,16 +8,17 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Welcome to A Slice or Two or Three!</h1>
+    <h1>Welcome to A Slice or Two (or Three!)</h1>
+    <h3><em>Where Nondairy Means More Slices!</em></h3>
     <div class="container">
       <form id="new-pizza">
         <h3>Create Order</h3>
 
-        <label for="topping">You have two choices:</label>
-        <select id="topping">
+        <p><label for="toppingChoice">You have two choices:</label>
+        <select id="toppingChoice">
           <option>Vegan Cheese</option>
           <option>Tofurky Pepperoni</option>
-        </select>
+        </select></p>
 
         <label for="inches">What Size?</label>
         <input type="text" id="inches" placeholder="size in inches">
@@ -25,7 +26,6 @@
         <button type="submit" class="btn btn-sm btn-primary">Order</button>
       </form>
 
-      <hr>
       <div id="orderInfo" class="response">
         <p>We'll cut your pie into <span class="sliceNum"></span> slices.</p>
       </div>
