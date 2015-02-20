@@ -1,17 +1,17 @@
-describe('Pizza', function() {
-  describe('inches', function() {
-    it("registers the customer's order in inches", function() {
-      var testPizza = Object.create(Pizza);
-      testPizza.inches(14);
-      expect(testPizza.numSlices).to.equal(14);
+describe("Pizza", function() {
+  describe("numSlices", function() {
+    it("will return the number of slices if customer chooses meat topping", function() {
+      var newPizza = Object.create(Pizza);
+      newPizza.inches = 12;
+      newPizza.toppingChoice = "Tofurky Pepperoni";
+      expect(newPizza.numSlices()).to.equal(6);
     });
-  });
 
-  describe("topping", function() {
-    it("gives a discount for avoiding meat", function() {
-      var testPizza = Object.create(Pizza);
-      testPizza.topping(18);
-      expect(testPizza.numSlices).to.equal(23);
+    it("will return the number of slices if customer does not choose meat", function() {
+      var newPizza = Object.create(Pizza);
+      newPizza.inches = 12;
+      newPizza.toppingChoice = "cheese";
+      expect(newPizza.numSlices()).to.equal(12);
     });
   });
 });
