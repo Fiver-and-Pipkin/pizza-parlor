@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Welcome to A Slice or Two (or Three!)</h1>
-    <h3><em>Where Nondairy Means More Slices!</em></h3>
+    <h3><em>Where Nondairy Means <b>More</b> Slices!</em></h3>
     <div class="container">
       <form id="new-pizza">
         <h3>Create Order</h3>
@@ -21,13 +21,13 @@
         </select></p>
 
         <label for="inches">What Size?</label>
-        <input type="text" id="inches" placeholder="size in inches">
+        <input type="number" id="inches" placeholder="size in inches" required>
 
         <button type="submit" class="btn btn-sm btn-primary">Order</button>
       </form>
 
-      <div id="orderInfo" class="response">
-        <p>We'll cut your pie into <span class="sliceNum"></span> slices.</p>
+      <div id="yourOrder" class="response">
+        <h2><p>We'll cut your pie into <span class="sliceNum"></span> slices.</p></h2>
       </div>
     </div>
   </body>

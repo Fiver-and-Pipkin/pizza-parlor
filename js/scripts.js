@@ -6,12 +6,12 @@ var Pizza = {
       if (this.toppingChoice === "Tofurky Pepperoni") {
         divideBy = .5;
       } else {
-        divideBy = 1;
-        debugger;
+        divideBy = .8;
       }
-
     var sliceCount = Math.round(this.inches * divideBy);
     return sliceCount;
+
+
     }
   };
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     $(".response").hide();
       $(".sliceNum").text(newPizza.numSlices());
-      $("#orderInfo").show();
+      $("#yourOrder").show();
     }
   );
 });
